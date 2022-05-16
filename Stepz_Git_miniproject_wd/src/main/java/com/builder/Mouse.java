@@ -14,6 +14,7 @@ public Mouse(Builder builder) {
 	this.age = builder.age;
 	this.height = builder.height;
 	//빌더가 마우스 인스턴스 만들어준다
+	System.out.println("sdfsdf");
 	
 	}
 
