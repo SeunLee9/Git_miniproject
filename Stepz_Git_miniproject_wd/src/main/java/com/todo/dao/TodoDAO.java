@@ -46,7 +46,6 @@ public class TodoDAO {
 				boolean isCompleted = resultSet.getBoolean("is_Completed");
 				todo = new Todo(id, title, description, duedate.toLocalDate(), isCompleted);
 				todos.add(todo);
-				System.out.println("seunlee");
 			}
 
 		} catch (SQLException e) {
@@ -167,8 +166,12 @@ public class TodoDAO {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println("complete");
 		}
 		return affectedRows;
+		
 	}
 
+	
+	
 }
